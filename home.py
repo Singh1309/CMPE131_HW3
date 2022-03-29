@@ -7,10 +7,11 @@ from flask import Flask, flash, redirect, render_template, request, session, abo
 
 myapp_obj = Flask(__name__)
 
+name = "Inder"
+city_names = ['Paris', 'Denver', 'Rome', 'Delhi']
+
 @myapp_obj.route("/")
-def hello():
-	name = "Inder"
-	city_names = ['Paris', 'Denver', 'Rome', 'Delhi']
+def home():
 	html_code =  '''
 	<html>
 	<body>
