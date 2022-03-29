@@ -10,19 +10,19 @@ myapp_obj = Flask(__name__)
 name = "Inder"
 city_names = ['Paris', 'Denver', 'Rome', 'Delhi']
 
-iter = lambda : for i in city_names
 @myapp_obj.route("/")
 def home():
-	return '''
+	html_code =  '''
 	<html>
 	<body>
 		<h1>Welcome ''' + name + ''' </h1>
-		<a href="https://google.com"> not google</a>
-		<ul>
-			<li> ''' + iter + ''' </li>
-		</ul>
-	</body>
-	</html>
+		<a href="google.com"> not google</a>
+		<p>
+		<ul>'''
+	for i in city_names:
+		 html_code += '''<li> ''' + i 
+	final_html_code = html_code + '''</li></ul></p></body></html>'''
+	return final_html_page
 
 #myapp_obj.run()
 
