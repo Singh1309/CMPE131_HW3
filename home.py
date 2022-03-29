@@ -15,12 +15,12 @@ def home():
 	html_code =  '''
 	<html>
 	<body>
-		<h1>Welcome ''' + name + ''' </h1>
-		<a href="google.com"> not google</a>
+		<h1>WelcomeLisa!</h1>
+		<ahref="www.google.com"> not google</a>
 		<p>
 		<ul>'''
 	for i in city_names:
-		 html_code += '''<li> ''' + i 
+		 html_code += '''<li>''' + i 
 	final_html_code = html_code + '''</li></ul></p></body></html>'''
 	return final_html_code
 
