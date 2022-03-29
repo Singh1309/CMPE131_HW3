@@ -1,3 +1,8 @@
+'''
+Inderpreet Singh
+015321384
+CMPE131 HW3
+'''
 from flask import Flask, flash, redirect, render_template, request, session, abort
 
 myapp_obj = Flask(__name__)
@@ -18,5 +23,8 @@ def hello():
 	final_html_code = html_code + '''</li></ul></body></html>'''
 	return final_html_page
 
-myapp_obj.run()
+#myapp_obj.run()
 
+'''
+Discussed this question with Christian (classmate) and used the lecture slides for reference
+'''
