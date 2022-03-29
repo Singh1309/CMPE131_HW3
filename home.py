@@ -7,8 +7,8 @@ from flask import Flask, flash, redirect, render_template, request, session, abo
 
 myapp_obj = Flask(__name__)
 
-name = "Inder"
-city_names = ['Paris', 'Denver', 'Rome', 'Delhi']
+name = "Lisa"
+city_names = ['Paris', 'London', 'Rome', 'Tahiti']
 
 @myapp_obj.route("/")
 def home():
