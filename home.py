@@ -16,7 +16,7 @@ def home():
 	<html>
 	<body>
 		<h1>WelcomeLisa!</h1>
-		<ahref="www.google.com"> not google</a>
+		<a href="www.google.com"> not google</a>
 		<p>
 		<ul>'''
 	for i in city_names:
