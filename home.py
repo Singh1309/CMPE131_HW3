@@ -20,8 +20,8 @@ def home():
 		<p>
 		<ul>'''
 	for i in city_names:
-		 html_code += '''<li>''' + i 
-	final_html_code = html_code + '''</li></ul></p></body></html>'''
+		 html_code += '''<li>''' + i + '''</li>''' 
+	final_html_code = html_code + '''</ul></p></body></html>'''
 	return final_html_code
 
 #myapp_obj.run()
