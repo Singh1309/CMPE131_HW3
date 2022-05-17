@@ -18,10 +18,13 @@ def home():
 		<h1>WelcomeLisa!</h1>
 		<ahref="www.google.com"> not google</a>
 		<p>
-		<ul>'''
-	for i in city_names:
-		 html_code += '''<li>''' + i
-	final_html_code = html_code + '''</li></ul></p></body></html>'''
-	return final_html_code
+		<ul>
+			<li> ''' + city_names[0] + ''' </li>
+           		 <li> ''' + city_names[1] + ''' </li>
+            		<li> ''' + city_names[2] + ''' </li>
+            		<li> ''' + city_names[3] + ''' </li>
+       		 </ul>
+    	</body>
+	</html> '''
 
 #myapp_obj.run()
