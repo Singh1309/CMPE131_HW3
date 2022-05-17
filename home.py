@@ -12,7 +12,7 @@ city_names = ['Paris', 'London', 'Rome', 'Tahiti']
 
 @myapp_obj.route("/")
 def home():
-	html_code =  '''
+	return '''
 	<html>
 	<body>
 		<h1>WelcomeLisa!</h1>
